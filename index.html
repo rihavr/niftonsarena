@@ -1,11 +1,8 @@
----
-layout: default
----
-
 <!DOCTYPE html>
 <html>
 <head>
   <title></title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
     body {
       display: flex;
@@ -18,17 +15,18 @@ layout: default
       background-position: center;
     }
     
-header {
-  display: none;
-}
+    header {
+      display: none;
+    }
     
     .container {
       text-align: center;
       max-width: 600px;
       padding: 20px;
-      background-color: #aaa;
+      background-color: #fff;
       border-radius: 8px;
       box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      border: 1px solid #ccc;
     }
     
     h1 {
@@ -55,16 +53,21 @@ header {
     a:hover {
       background-color: #0056b3;
     }
+    
+    @media (max-width: 600px) {
+      .container {
+        max-width: 90%;
+      }
+    }
   </style>
 </head>
 <body>
   <div class="container">
     <h1>Welcome to Niftons Arena!</h1>
-    <p>Niftons Arena is a multiplayer real-time strategy VR game. Your little Niftons are entering the arena through a door in the wall, and you need to build paths and lead them safely through the arena to their exit gate. One match is 20 or 30 minutes, and whoever gets most of their Niftons to the exit wins the game! Be ready to cross your paths with hundreds of enemy Niftons and get in some serious trouble. Good news, you can fight other Niftons with deadly weapons and suprise them with unexpected magic.</p>
+    <p>Niftons Arena is a multiplayer real-time strategy VR game. Your little Niftons are entering the arena through a door in the wall, and you need to build paths and lead them safely through the arena to their exit gate. One match is 20 or 30 minutes, and whoever gets most of their Niftons to the exit wins the game! Be ready to cross your paths with hundreds of enemy Niftons and get in some serious trouble. Good news, you can fight other Niftons with deadly weapons and surprise them with unexpected magic.</p>
   
     <a href="https://www.oculus.com/experiences/quest/4904605882894028/" target="_blank">Get on AppLab</a>
-    <br>
-    <p>Join our community on Discord, find people to play with and make new friends!</p>
+    <p style="margin-top: 20px;">Join our community on Discord, find people to play with and make new friends!</p>
     <a href="https://discord.com/invite/G2QP6fdkhG" target="_blank">Join the Discord</a>
   </div>
 </body>
