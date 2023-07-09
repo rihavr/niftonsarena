@@ -18,6 +18,28 @@
     header {
       display: none;
     }
+	
+	.plain-link {
+  text-decoration: underline !important;
+  color: inherit;
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
+  transition: none;
+}
+
+.plain-link:hover,
+.plain-link:focus,
+.plain-link:active {
+  text-decoration: underline !important;
+  color: inherit;
+  background-color: transparent;
+  outline: none;
+}
+
+
     
     .container {
       text-align: center;
@@ -31,12 +53,12 @@
     }
     
     .red-area {
-      background-color: red;
+      background-color: #e83737;
       padding: 10px;
       position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
+      top: -80px;
+      left: 0px;
+      right: 0px;
     }
     
     .red-area a {
@@ -79,13 +101,15 @@
 <body>
   <div class="container">
     <div class="red-area">
-      <a href="https://discord.gg/tYyTvW98Eq" target="_blank">Discord</a>
+      <p style="color: white; font-weight: bold;">
+        Dealing 50 free keys, <a href="https://discord.gg/tYyTvW98Eq" class="plain-link" target="_blank">join our Discord</a> and message the admin!
+      </p>
     </div>
     <h1>Welcome to Niftons Arena!</h1>
     <p>Niftons Arena is a multiplayer real-time strategy VR game. Your little Niftons are entering the arena through a door in the wall, and you need to build paths and lead them safely through the arena to their exit gate. One match is 20 or 30 minutes, and whoever gets most of their Niftons to the exit wins the game! Be ready to cross your paths with hundreds of enemy Niftons and get in some serious trouble. Good news, you can fight other Niftons with deadly weapons and surprise them with unexpected magic.</p>
   
     <a href="https://www.oculus.com/experiences/quest/4904605882894028/" target="_blank">Get on AppLab</a>
-    <p style="margin-top: 20px;">Join our community on Discord, find people to play with and make new friends!</p>
+    <p style="margin-top: 20px;">Join our community on Discord, find other players and make new friends!</p>
     <a href="https://discord.gg/tYyTvW98Eq" target="_blank">Join the Discord</a>
   </div>
 </body>
